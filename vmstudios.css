@@ -1,0 +1,95 @@
+body{
+    min-width: 320px;
+    max-height: 480px;
+}
+header{    
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    pointer-events: none;
+    z-index: 9000;
+    background-color: rgba(127, 255, 212, 0.466);
+}
+header a{  
+    pointer-events: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 15vw;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: rgba(185, 255, 127, 0.466);
+}
+figure{
+    height: 50%;
+    background-color: rgba(255, 195, 127, 0.76);
+}
+figure img {
+    height: 100%;
+    background-color: rgba(127, 136, 255, 0.76);
+}
+nav ul {
+    margin-left: auto;
+    height: 50%;
+    background-color: rgba(255, 195, 127, 0.76);
+}
+nav ul li { 
+    background-color: rgba(221, 86, 255, 0.76);
+}
+#home{
+    display: flex;
+    height: 67vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    transition: all 0.3s ease-out;
+}
+#home a{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    transition: all 0.3s ease-out;
+}
+#projects{
+    display: flex;
+    height: 33vh;
+    width: 100%;
+    background-color: lightgray;
+    transition: all 0.3s ease-out;
+}
+#projects a{
+    position: relative;
+    flex-grow: 1;
+    overflow-x: hidden;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+#projects a.active {
+    flex-basis: 95%;
+}
+#projects a:not(.active) {
+    flex-basis: 5%;
+}
+#projects a:hover{
+    background-color:rgba(0, 255, 98, 0.753);
+}
+#galLink_A{
+    background-color: #000000cc;
+}
+#galLink_B{
+    background-color: #0000008e;
+}
+#galLink_C{
+    background-color: rgba(0, 0, 0, 0.24);
+}
+footer{
+    height: 100vh;
+    background-color: rgba(47, 79, 79, 0.795);
+}

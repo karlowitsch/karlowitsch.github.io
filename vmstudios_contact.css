@@ -1,0 +1,86 @@
+
+#footer_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: -1;
+}
+.contact{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    min-height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20% auto 0 auto;
+}
+form input{
+    height: 45px;
+    margin: 3px 0 13px 0;
+    padding: 0 3px 0 7px;
+}
+form textarea {
+    height: 225px;
+    margin: 3px 0 17px 0;
+    resize: none;
+    padding: 7px 3px 7px 7px;
+    font-family: Louis-George-Cafe;
+}
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgb(185, 110, 24);
+    color: white;
+    border: none;
+    border-radius: 1px;
+    font-size: 18px;
+    height: 45px;
+    width: 50%;
+    font-family: Louis-George-Cafe-Bold;
+    pointer-events: fill;
+    margin: 7px 0 43px 0;
+}
+#media{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: auto 0 15px 0;
+    width: 100%;
+    height: auto;
+}
+#media li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 40px;
+}
+#media li a{
+    margin: 0 5px;
+    height: 100%;
+    width: 40px;
+    background-image: url('img/media_instagram.png');
+    background-size: 100% 100%;
+}
+#imprint{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 12px;
+}
