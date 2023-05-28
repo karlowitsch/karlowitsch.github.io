@@ -7,6 +7,7 @@
         <meta name="description" content="VMStudios_V06">
         <link rel="stylesheet" href="css-reset.css">
         <link rel="stylesheet" href="vmstudios.css">
+        <link rel="stylesheet" href="vmstudios_contact.css">
         <link rel="stylesheet" href="vmstudios_fonts-navi.css">
         <script src="jquery-3.6.4.js"></script>
         <script src="vmstudios.js"></script>
@@ -39,6 +40,37 @@
         </main>
         <footer id="contact"> 
             <h2>CONTACT</h2>
+            <div class="contact">
+                <form action="send-email.php" method="POST">
+
+                    <input type="text" id="check" name="check">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                  
+                    <label for="email">E-Mail*</label>
+                    <input type="email" id="email" name="email">                     
+                    
+                    <label for="subject">Subject*</label>
+                    <input type="subject" id="subject" name="subject">
+                  
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message"></textarea>
+                  
+                    <button type="submit">SUBMIT</button>
+                </form>                
+                <ul id="media" role="media">
+                    <li><a href=""></a></li> 
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>         
+                <ul id="imprint" role="imprint">
+                    <li><a class="link" href="">© 2023 JUNGLE LLC   |   IMPRINT</a></li>
+                </ul>  
+            </div>
+            <div id="footer_bg">
+            </div>
         </footer>
     </body>
 </html>
