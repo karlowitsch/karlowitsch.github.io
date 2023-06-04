@@ -1,6 +1,7 @@
 body{
     min-width: 320px;
     max-height: 480px;
+    height: 100%;
 }
 header{    
     top: 0;
@@ -11,7 +12,6 @@ header{
     min-width: 320px;
     pointer-events: none;
     z-index: 9000;
-    background-color: rgba(127, 255, 212, 0.466);
 }
 header a{  
     pointer-events: auto;
@@ -23,73 +23,171 @@ nav{
     height: 15vw;
     min-height: 50px;
     max-height: 100px;
-    background-color: rgba(185, 255, 127, 0.466);
 }
 figure{
     height: 50%;
-    background-color: rgba(255, 195, 127, 0.76);
 }
 figure img {
     height: 100%;
-    background-color: rgba(127, 136, 255, 0.76);
 }
 nav ul {
     margin-left: auto;
     height: 50%;
-    background-color: rgba(255, 195, 127, 0.76);
 }
-nav ul li { 
-    background-color: rgba(221, 86, 255, 0.76);
+nav ul li a img{
+    height: 35px;
 }
 #home{
-    display: flex;
     height: 67vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.747);
     transition: all 0.3s ease-out;
 }
 #home a{
-    position: relative; 
+    background-color: #0000005b;
+    position: relative;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+#home a:hover{
+    background-color: #00000033;   
+}
+#home a.active{
+    background-color:  #0000008a; 
+}
+#home a.active:hover{
+    background-color: #0000008a;
+}
+#home a:hover #hero{
+    transform: scale(1.8);
+}
+#home a.active #hero{
+    filter: blur(2px);
+    transform: scale(2);
+}
+#home a.active .triangle-down{
+    margin-top: 40px;
+    transform: rotateX(180deg)
+}
+#hero{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    transform: scale(1.7);
+}
+#home_img{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 0px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+#home_img img{
+    height: 15vw;
+    min-height: 120px;
+    margin: 0 0.7% 0 0.7%;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+#home_txt{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+.triangle-down {
+    margin-top: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffffff;
     transition: all 0.3s ease-out;
 }
 #projects{
     display: flex;
     height: 33vh;
     width: 100%;
-    background-color: lightgray;
     transition: all 0.3s ease-out;
 }
 #projects a{
     position: relative;
     flex-grow: 1;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100%;
     transition: all 0.3s ease-out;
+    background-color: #0000005b;
 }
 #projects a.active {
     flex-basis: 95%;
+    background-color: #0000008a;
+}
+#projects a.active img{
+    filter: blur(5px);
+}
+#projects a.active:hover{
+    background-color: #0000008a;
 }
 #projects a:not(.active) {
     flex-basis: 5%;
 }
 #projects a:hover{
-    background-color:rgba(0, 255, 98, 0.753);
+    background-color: #00000033;
 }
-#galLink_A{
-    background-color: #000000cc;
+#projects a img{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#galLink_B{
-    background-color: #0000008e;
+#galLink_A img{
+    transform: scale(1.5);
+    margin-left: 8%;
 }
-#galLink_C{
-    background-color: rgba(0, 0, 0, 0.24);
+#galLink_B img{
+    transform: scale(1.1);
+}
+#galLink_C img{
+    transform: scale(1.1);
+}
+#galLink_A:hover img{
+    transform: scale(1.6);
+    margin-left: 8%;
+}
+#galLink_B:hover img{
+    transform: scale(1.2);
+}
+#galLink_C:hover img{
+    transform: scale(1.2);
+}
+#galLink_A.active img{
+    margin-left: 8%;
+    transform: scale(2);
+}
+#galLink_B.active img{
+    transform: scale(1.5);
+}
+#galLink_C.active img{
+    transform: scale(1.5);
 }
 footer{
     height: 100vh;
-    background-color: rgba(47, 79, 79, 0.795);
+    background-image: url('img/img_contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
 }

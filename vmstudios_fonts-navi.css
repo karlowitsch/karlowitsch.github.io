@@ -12,22 +12,34 @@ a, p{
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Louis-George-Cafe-Bold;
-    color: white;   
-}
-h1 { 
-    text-align: center;
+    color: white;
 }
 #projects h2 {
     position: absolute;
     writing-mode: vertical-lr;
     right: 0;
     bottom: 0;
+    margin: 0.3vw;
     font-size: 5vh;
-    transition: all 0.3s ease-out;
+    transition: font-size 0.3s ease-out;
+    float: right;
 }
 #subline{
-    font-family: Louis-George-Cafe;
+    font-family: Louis-George-Cafe-Italic;
     margin-top: 20px;
     line-height: 1.3;
     text-align: center;
+}
+#home_txt p{
+    font-family: Louis-George-Cafe;
+    margin: 15px 5% 0 5%;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.1em;
+}
+footer h2{
+    font-size: 5vh;
+    margin-top: 19px;
+    margin-right: 0px
 }
