@@ -153,6 +153,7 @@ nav ul li a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.3s ease-out;
 }
 #galLink_A img{
     transform: scale(1.5);
