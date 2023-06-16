@@ -100,6 +100,12 @@ nav ul li a img{
     margin: 0 0.7% 0 0.7%;
     background-color: rgba(0, 0, 0, 0.712);
 }
+#rollButton{
+    width: 150px;
+    margin-top: 20px;
+    padding: 15px 0;
+    align-self: center;
+}
 #home_txt{
     display: flex;
     justify-content: center;
