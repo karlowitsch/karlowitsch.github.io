@@ -86,19 +86,14 @@ nav ul li a img{
     transform: scale(1.7);
 }
 #homeGal{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 20px;
-    height: 0px;
-    width: 100%;
-    transition: all 0.3s ease-out;
+    height: 27vw;
+    min-height: 86px;
+    max-height: 250px;
 }
 #homeGal img{
-    height: 15vw;
-    min-height: 120px;
+    height: 100%;
+    width: auto;
     margin: 0 0.7% 0 0.7%;
-    background-color: rgba(0, 0, 0, 0.712);
 }
 #rollButton{
     width: 150px;
