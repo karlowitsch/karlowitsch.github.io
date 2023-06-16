@@ -85,7 +85,7 @@ nav ul li a img{
     transition: all 0.3s ease-out;
     transform: scale(1.7);
 }
-#home_img{
+#homeGal{
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -94,7 +94,7 @@ nav ul li a img{
     width: 100%;
     transition: all 0.3s ease-out;
 }
-#home_img img{
+#homeGal img{
     height: 15vw;
     min-height: 120px;
     margin: 0 0.7% 0 0.7%;
