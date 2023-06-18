@@ -1,0 +1,62 @@
+header{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+nav{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+figure{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+nav ul {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+nav ul li{
+    background-color: rgba(128, 128, 128, 0.5);
+}   
+body{
+    background-color: chocolate;
+}
+#home{
+    background-color: rgba(137, 43, 226, 0.514);
+}
+h1{
+    background-color: rgba(137, 43, 226, 0.514);
+}
+#subline{
+    background-color: rgba(137, 43, 226, 0.514);
+}
+#homeGal{
+    background-color: rgba(137, 43, 226, 0.514);
+}
+#homeGal img{
+    background-color: rgba(0, 0, 0, 0.712);
+}
+#home_txt{
+    background-color: rgba(137, 43, 226, 0.514);
+}
+#projects{
+    background-color: #fad71386;
+}
+#projects h2 {
+    background-color: rgba(95, 226, 43, 0.514);
+}
+.galLink{
+    background-color: #0000005b;
+}
+#galLink_A{
+    background-color: #0059ff88;
+}
+#galLink_B {
+    background-color: #00ff4079;
+}
+#galLink_C {
+    background-color: #ff00dd88;
+}
+.runner{
+    background-color: rgba(137, 43, 226, 0.514);
+}footer{
+    background-color: #00000070;
+}
+.contact_div{
+    background-color: rgb(0, 0, 0);
+}
