@@ -25,6 +25,9 @@ h1{
 #subline{
     background-color: rgba(137, 43, 226, 0.514);
 }
+#score{
+    background-color: aqua;
+}
 #homeGal{
     background-color: rgba(137, 43, 226, 0.514);
 }
