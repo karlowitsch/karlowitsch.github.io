@@ -1,0 +1,112 @@
+body{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 480px;
+}
+main{
+    width: 100%;
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 67vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9000;
+}
+#score{
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreBox{
+    width: 55px;
+    height: 70%;
+    margin: 0 0.25%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBoxA{
+    margin-left: 5px;
+}
+#scoreBoxB{
+    margin-right: 5px;
+}
+.count{
+    color: black;
+}
+#homeGal{
+    height: 0;
+    max-height: 250px;
+}
+#homeGal img{
+    height: 0;
+    width: auto;
+    margin: 0 0.7% 0 0.7%;
+}
+#rollButton{
+    width: 150px;
+    margin-top: 20px;
+    padding: 15px 0;
+    align-self: center;
+}
+#projects{
+    display: flex;
+    height: 33vh;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+#projects a{
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    background-color: #0000005b;
+}
+#projects a:hover{
+    background-color: #00000033;
+}
+#projects a.active {
+    flex-basis: 95%;
+    background-color: #0000008a;
+}
+#projects a:not(.active) {
+    flex-basis: 5%;
+}
+#projects a.active:hover{
+    background-color: #0000008a;
+}
+#projects a.active img{
+    filter: blur(5px);
+}
+.galLink{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+.galLink img{
+    width: 30%;
+    height: auto;
+    margin: 0 3%;
+}
