@@ -1,3 +1,9 @@
 #index-hero{
     background-color: rgb(196, 94, 35);
 }
+.header-nav__item-page{
+    display: none;
+}
+#header-nav__item-toggle{
+    display: flex;
+}
