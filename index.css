@@ -1,0 +1,110 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 9999;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0);
+}
+#header-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9997;
+    box-shadow: inset 0 50px 85px rgba(0, 0, 0);
+}
+#header-nav{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    background-color: rgb(56, 56, 56);
+}
+#header-nav__menu{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(102, 102, 102);
+}
+.header-nav__item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background-color: rgb(141, 141, 141);
+}
+.header-nav__item a{
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+    transform: scale(0.87);
+    transition: transform 0.07s linear, color 0.07s linear;
+    background-color: rgb(238, 255, 0);
+}
+.header-nav__item a:hover{
+    transform: scale(1);
+    color: #fad190;
+}
+#header-nav__item-logo{
+    margin-right: auto; /* Sorgt dafür, dass das erste Element links bleibt */
+}
+#header-nav__item-logo a{
+    aspect-ratio: 25/16;
+    height: 60%;
+}
+#header-nav__item-logo svg{
+    width: 100%;
+    height: 100%;
+}
+.header-nav__item-page {
+    margin: 0 18px;
+}
+#header-nav__item-cart {
+    margin-left: 5%;
+}
+#header-nav__item-cart a {
+    height: 20%;
+}
+#header-nav__item-cart svg{
+    aspect-ratio: 10/9;
+    height: 100%;
+    background-color: tomato;
+}
+#header-nav__item-count{
+    width: 16px;
+    margin-left: 7px;
+    background-color: tomato;
+}
+#header-nav__item-toggle{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+#index-hero{
+    height: 100vh;
+    background-color: rgb(40, 93, 124);
+}
+.content{
+    height: 500px;
+}
+footer{
+    position: relative;
+    height: 200px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+#footer-copyright{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
