@@ -1,0 +1,27 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+    
+    #showcase{
+        width: 80%;
+        aspect-ratio: unset;
+        padding: 0;
+    }
+    .showcase__item-picture-blend{
+        opacity: 1;
+    }
+    
+    #usp{
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 1px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        background-color: brown;
+    }
+    .usp__item{
+        aspect-ratio: 1/1;
+    }
+}

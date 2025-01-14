@@ -1,9 +1,9 @@
-#index-hero{
-    height: 100vh;
+#products-hero{
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/hero.jpg);
+    background-image: url(img/hero-dealers.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -18,9 +18,8 @@
     flex-direction: column;
     align-items: center;
 }
-#showcase{
+#products{
     width: 100%;
-    aspect-ratio: 1/0.55;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
@@ -28,7 +27,7 @@
     overflow-y: hidden;
     padding: 0 23%;
 }
-.showcase__item{
+.products__item{
     position: relative;
     aspect-ratio: 1/1;
     background-color:brown;
@@ -36,14 +35,14 @@
     justify-content: center;
     align-items: center;
 }
-.showcase__item-picture{
+.products__item-picture{
     position: absolute;
     width: 50%; /* Bild passt sich dem Parent an */
 }
-.showcase__item-picture-blend{
+.products__item-picture-blend{
     opacity: 0;
 }
-.showcase__item-picture img {
+.products__item-picture img {
     width: 100%; /* Skaliert das Bild innerhalb des Parent */
     height: auto; /* Erhält das Seitenverhältnis */
     display: block; /* Entfernt unnötige Abstände unterhalb des Bildes */
