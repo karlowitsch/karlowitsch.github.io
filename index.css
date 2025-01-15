@@ -1,3 +1,6 @@
+#header-nav__item-logo a{
+    color: rgba(241, 182, 104, 0.74);
+}
 #index-hero{
     height: 100vh;
     display: flex;
@@ -12,26 +15,18 @@
 .headline-box{
     text-align: center;
 }
-.content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 #showcase{
     width: 100%;
     aspect-ratio: 1/0.55;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    background-color: yellowgreen;
     overflow-y: hidden;
     padding: 0 23%;
 }
 .showcase__item{
     position: relative;
     aspect-ratio: 1/1;
-    background-color:brown;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +63,11 @@
 
 
 .testimonial{
-    height: 50vh;
+    width: 60%;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: clamp(16px, 2.8vw, 28px);
 }

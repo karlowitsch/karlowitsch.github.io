@@ -26,6 +26,7 @@
     background-color: yellowgreen;
     overflow-y: hidden;
     padding: 0 23%;
+    margin-bottom: 5%;
 }
 .products__item{
     position: relative;
@@ -62,13 +63,4 @@
     justify-content: center;
     align-items: center;
     background-color: yellow;
-}
-
-
-
-.testimonial{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
