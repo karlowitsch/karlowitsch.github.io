@@ -1,13 +1,9 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     
-    .header-nav__item a{
-    }
 }
 
 @media (min-width: 1025px) {
 
-    .header-nav__item a{
-    }
     #header-nav__item-pages{
         position: relative;
         width: 100%;
