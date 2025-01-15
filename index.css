@@ -2,6 +2,7 @@
     color: rgba(241, 182, 104, 0.74);
 }
 #index-hero{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -15,10 +16,11 @@
     width: 100%;
     height: 100%;
 }
-.hero-img{
+#index-hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0;
     animation: fadeIn 0.8s ease-in-out forwards;
 }
