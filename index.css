@@ -2,18 +2,17 @@
     color: rgba(241, 182, 104, 0.74);
 }
 #index-hero{
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
     color: white;
-    background-color: rgb(40, 93, 124);
+    background-color: rgb(0, 0, 0);
 }
 .headline-box{
     text-align: center;
+    z-index: 0;
 }
 #showcase{
     width: 100%;
@@ -43,6 +42,8 @@
     height: auto; /* Erhält das Seitenverhältnis */
     display: block; /* Entfernt unnötige Abstände unterhalb des Bildes */
     transform: scale(0.7);
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 #usp{
