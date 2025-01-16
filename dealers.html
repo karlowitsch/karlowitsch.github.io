@@ -58,7 +58,13 @@
         <div id="header-background"></div>
     </header>
     <main>
-        <section id="products-hero">
+        <section class="hero">
+            <picture>
+                <source srcset="img/hero/hero-dealers-2560.webp" type="image/webp" media="(min-width: 1921px)">
+                <source srcset="img/hero/hero-dealers-1920.webp" type="image/webp" media="(min-width: 1025px)">
+                <source srcset="img/hero/hero-dealers-1024.webp" type="image/webp" media="(max-width: 1024px)">
+                <img src="img/hero/hero-dealers-1920.jpg" loading="lazy" alt="Hero Image">
+            </picture>
             <div class="headline-box">
                 <h1>DEALERS</h1>
                 <p class="big-p">Let's Go Find The Rabbit</p>

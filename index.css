@@ -1,37 +1,9 @@
 #header-nav__item-logo a{
     color: rgba(241, 182, 104, 0.74);
-}
-#index-hero{
-    position: relative;
-    width: 100%;
+
+} 
+main .hero{
     height: 100svh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color:#0f0f0f;
-}
-#index-hero picture {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-#index-hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
-}
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-.headline-box{
-    text-align: center;
-    z-index: 0;
 }
 #showcase{
     width: 100%;
