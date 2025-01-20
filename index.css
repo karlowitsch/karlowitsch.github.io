@@ -5,56 +5,118 @@
 main .hero{
     height: 100svh;
 }
-#showcase{
+
+
+
+#showcase {
     width: 100%;
-    aspect-ratio: 1/0.55;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    min-height: 80vw;
     gap: 1px;
-    overflow-y: hidden;
-    padding: 0 23%;
+    display: flex;
+    padding: 0 20vw;
+    overflow-x: auto;
+    margin: 1vh 0 3vh 0;
 }
-.showcase__item{
-    position: relative;
-    aspect-ratio: 1/1;
+.showcase__item {
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 0 4vh 0;
+}
+.showcase__item-link {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2vh 0;
+    transition: transform 0.2s ease;
+}
+.showcase__item-link:hover {
+    width: 100%;
+    transform: scale(0.97);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.showcase__item-picture{
-    position: absolute;
-    width: 50%; /* Bild passt sich dem Parent an */
+.showcase__item-link-picture {
+    width: 100%;
+    aspect-ratio: 1/1.2;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
-.showcase__item-picture-blend{
-    opacity: 0;
+.showcase__item-link-picture img {
+    max-width: 100%;
+    height: 100%;
 }
-.showcase__item-picture img {
-    width: 100%; /* Skaliert das Bild innerhalb des Parent */
-    height: auto; /* Erhält das Seitenverhältnis */
-    display: block; /* Entfernt unnötige Abstände unterhalb des Bildes */
-    transform: scale(0.7);
-}
+
 
 #usp{
     width: 100%;
-    height: 100vh;
     display: grid;
-    gap: 1px;
-    grid-template-rows: auto auto auto;
-    background-color: brown;
+    overflow: hidden;
 }
 .usp__item{
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+}
+.usp__item a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.usp__item a:hover{
+    transform: scale(1.1);
+}
+.usp__item picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: transform 0.2s ease;
+}
+.usp__item picture img{ 
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.usp-headline{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+}
+.usp__item h2{
+    width: 95%;
+    margin: 1%;
+    z-index: 1;
+    color: white;
+}
+.usp__item p{
+    width: 82%;
+    margin: 1%;
+    z-index: 1;
+    color: white;
 }
 
 
 
 .testimonial{
-    width: 60%;
-    height: 40vh;
+    width: 40%;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -16,6 +16,7 @@ header{
     position: fixed;
     width: 100%;
     height: 11vh;
+    background-color: rgb(10, 10, 10);
     top: 0;
     z-index: 9999;
     pointer-events: none;
@@ -198,21 +199,27 @@ header{
     align-items: center;
 }
 .headline-box-content{
-    margin: 3% 0;
+    margin: 6vh 0 3vh 0;
+    text-align: center;
 }
 h1{
     font-family: 'OswaldSemiBold', sans-serif;
-    font-size: clamp(40px, 10vw, 170px);
+    font-size: clamp(50px, 10vw, 170px);
 }
 h2{
     font-family: 'OswaldSemiBold', sans-serif;
-    font-size: clamp(30px, 2.5vw, 50px);
+    font-size: clamp(28px, 4vw, 50px);
 }
 .link-basic{
-    padding: 20px 40px;
-    margin: 3% 0;
+    padding: 20px 60px;
+    margin: 4% 0 13% 0;
     color: white;
-    background-color: darkred;
+    background-color: rgb(0, 0, 0);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.link-basic:hover{
+    transform: scale(1.05);
+    color: #fad190;
 }
 
 
@@ -222,19 +229,65 @@ h2{
 }
 
 
-.newsletter{
+#newsletter{
+    position: relative;
     width: 100%;
-    height: 33vh;
+    min-height: 27vh;
     display: flex;
+    flex-direction: column;
+    gap: 3%;
+    padding: 5vh 0;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(80, 80, 80);
+}
+#headline-box-newsletter{
+    width: 80%;
+    max-width: 500px;
+}
+#input-box-newsletter{
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+#newsletter input{
+    height: 55px;
+    margin: 3% 0 2% 0;
+    padding: 0 3%;
+    border: none;
+}
+#newsletter button{
+    padding: 20px 60px;
+    color:#0f0f0f;
+    background-color: #ffe4b8;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+#newsletter button:hover{
+    background-color: #fad190;
+}
+#newsletter picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#newsletter picture img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
+
 footer{
+    position: relative;
     height: 67vh;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,30 +296,42 @@ footer{
 }
 #footer-crest{
     aspect-ratio: 25/16;
-    width: 50%;
+    max-height: 50%;
+    width: 100%;
 }
 #footer-crest svg{
     width: 100%;
     height: 100%;
     color: white;
 }
-
 #footer-social-media-nav-list {
     display: flex;
-    gap: 3px;
+    gap: 7px;
+    margin:  10% 0;
 }
 #footer-nav-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
-    margin-bottom: 10px;
-
+    margin-bottom: 15px;
+}
+.footer-nav-menu-item a{
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+    transition: color 0.07s linear;
+    color: white;
+}
+.footer-nav-menu-item:hover a{
+    color: #fad190;
 }
 #footer-copyright{
+    position: absolute;
     width: 100%;
+    bottom: 3%;
     color: white;
     text-align: center;
 }
