@@ -12,6 +12,7 @@ main .hero{
     width: 100%;
     display: flex;
     overflow-x: auto;
+    padding: 0 24vw;
 }
 .showcase__item {
     display: flex;
@@ -19,12 +20,11 @@ main .hero{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 10px;
 }
 .showcase__item-link {
     width: auto;
     height: 100%;
-    transform: scale(0.95);
+    transform: scale(1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,7 @@ main .hero{
     align-items: center;
 }
 .showcase__item-link-picture {
-    width: 100%;
-    min-width: 50vw;
+    width: 50vw;
     aspect-ratio: 1/1.2;
     position: relative;
     display: flex;

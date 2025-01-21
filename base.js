@@ -6,6 +6,23 @@ const menuIconC = toggleLink.querySelector('#menu-icon-c');
 const mediaQuery = window.matchMedia('(min-width: 1025px)');
 let toggleOn = false;
 
+window.addEventListener('scroll', updateHeaderOpacity);
+window.addEventListener('load', updateHeaderOpacity); // Initialisierung beim Laden der Seite
+
+function updateHeaderOpacity() {
+    var scrollPosition = window.scrollY; // Aktuelle Scroll-Position
+    var header = document.querySelector('#header-background');
+
+    // Berechne die Transparenz basierend auf der Scroll-Position
+    var opacity = Math.max(scrollPosition / 300, 0.00); // Opazität sinkt von 1 bis 0.00 bei 300px Scrollen
+
+    // Setze die Opazität direkt
+    header.style.opacity = opacity;
+}
+
+// Event-Listener für Scroll und Seitenladen hinzufügen
+window.addEventListener('scroll', updateHeaderOpacity);
+window.addEventListener('load', updateHeaderOpacity); // Initialisierung beim Laden der Seite
 
 toggleLink.addEventListener('click', function(event) {
     event.preventDefault(); 
