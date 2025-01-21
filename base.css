@@ -268,11 +268,12 @@ p{
     align-items: center;
     color: white;
 }
-#headline-box-newsletter{
+#newsletter-headline-box{
     width: 80%;
     max-width: 500px;
+    margin: 0 0 2% 0;
 }
-#input-box-newsletter{
+#newsletter-input-box{
     width: 80%;
     max-width: 500px;
     display: flex;
@@ -289,7 +290,6 @@ p{
     padding: 20px 60px;
     color:#0f0f0f;
     background-color: #ffe4b8;
-    margin: 0;
     border: none;
     cursor: pointer;
 }

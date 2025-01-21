@@ -59,7 +59,7 @@ main .hero{
 }
 .usp__item{
     width: 100%;
-    height: 45vh;
+    height: 70vw;
     overflow: hidden;
 }
 .usp__item a{
@@ -123,6 +123,6 @@ main .hero{
 }
 .testimonial p{
     font-family: 'OpenSansRegular', sans-serif;
-    font-size: clamp(34px, 2.3vw, 35px);
+    font-size: clamp(18px, 2.3vw, 30px);
     line-height: 1.7;
 }
