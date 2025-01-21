@@ -41,10 +41,10 @@
         align-items: center;
         color: white;
     }
-    #headline-box-newsletter{
+    #newsletter-headline-box{
         width: 25%;
     }
-    #input-box-newsletter{
+    #newsletter-input-box{
         width: unset;
         display: flex;
         flex-direction: row;

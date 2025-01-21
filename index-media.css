@@ -4,15 +4,13 @@
 
 @media (min-width: 1025px) {
     
-    #showcase {
-        width: 82%;
+    .showcase {
+        width: 80%;
         display: flex;
-        justify-content: space-between;
-        gap: 1px;
-        overflow: hidden;
     }
     .showcase__item {
         flex: 1;
+        min-width: unset;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,6 +35,7 @@
     }
     .showcase__item-link-picture {
         width: 100%;
+        min-width: unset;
         aspect-ratio: 1;
         position: relative;
         display: flex;
@@ -65,7 +64,7 @@
         margin: 40% 1% 1% 1%;
     }
     .usp__item p{
-        width: 50%;
+        width: 70%;
     }
 
 }
