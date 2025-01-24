@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="img-symbol-bg" viewBox="0 0 21 17">
+		<clipPath id="clip">
+			<polygon points="10.264,6.427 10.215,6.388 2.134,0 0,7.421 0.815,7.731 0.893,7.761 0.964,7.802 11.151,13.74 
+				11.694,14.056 17.049,15.484 19.704,13.831 20.403,12.554 10.317,6.459 		"/>
+		</clipPath>
+		<g clip-path="url(#clip)">
+			<path fill="#FFFFFF" d="M0.008,0.011h20.396v5.175H0.008V0.011z"/>
+			<path fill="#00966E" d="M0.008,5.186h20.396v5.175H0.008V5.186z"/>
+			<path fill="#D62612" d="M0.008,10.361h20.396v5.174H0.008V10.361z"/>
+		</g>
+	</symbol>
+</svg>
+
+

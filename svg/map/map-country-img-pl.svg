@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="img-symbol-pl" viewBox="0 0 33 46">
+		<clipPath id="clip">
+			<polygon points="8.771,0.64 8.301,8.745 8.288,8.97 8.179,9.168 0.196,23.692 8.2,37.772 17.945,45.463 
+				28.326,40.786 32.555,23.99 23.911,16.767 22.918,15.936 23.973,15.185 29.57,11.194 25.426,8.195 15.994,8.593 10.888,0.64"/>
+		</clipPath>
+		<g clip-path="url(#clip)">
+			<rect fill="#FFFFFF" width="33" height="23"/>
+			<rect fill="#DC143C" width="33" height="23" y="23"/>
+		</g>
+	</symbol>
+</svg>
