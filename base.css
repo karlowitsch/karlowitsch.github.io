@@ -221,7 +221,7 @@ h1{
 }
 h2{
     font-family: 'OswaldSemiBold', sans-serif;
-    font-size: clamp(30px, 7vw, 40px);
+    font-size: clamp(30px, 10vw, 55px);
     line-height: 1.2;
 }
 h3{
