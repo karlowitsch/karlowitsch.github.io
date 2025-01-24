@@ -1,0 +1,752 @@
+[
+    {
+        "name": "ASIA",
+        "abbreviation": "as",
+        "headline-position": { "left": "63.7%", "bottom": "44%"},
+        "spot-metrics": { "width": "26.1%", "aspectRatio": "522/555", "left": "65.3%", "bottom": "45.12%"},
+        "transform": { "scale": 1.8, "translateX": "-52%", "translateY": "7%" },
+        "items": [
+            {
+                "name": "JAPAN",
+                "abbreviation": "jp",
+                "spot-metrics": { "width": "10.61%", "aspectRatio": "55/111", "left": "74.71%", "bottom": "39.05%"},
+                "img": "img/svg/flags/jp.svg",
+                "items": [
+                    {
+                        "img": "img/logos/electro-harmonix.svg" ,
+                        "alt": "Electro Harmonix Logo",
+                        "text": "Tokyo",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "EUROPE",
+        "abbreviation": "eu",
+        "headline-position": { "left": "44.5%", "bottom": "54.5%"},
+        "spot-metrics": { "width": "17%", "aspectRatio": "340/248", "left": "57%", "bottom": "68.36%"},
+        "transform": { "scale": 3.2, "translateX": "-28%", "translateY": "19%" },
+        "items": [
+            {
+                "name": "AUSTRIA",
+                "abbreviation": "at",
+                "spot-metrics": { "width": "6.63%", "aspectRatio": "23/12", "left": "34.3%", "bottom": "32.9%"},
+                "img": "img/svg/flags/at.svg",
+                "items": [
+                    {
+                        "img": "img/logos/guitar-lounge.png",
+                        "alt": "Guitar-Lounge Logo",
+                        "text": "Feldkirchen bei Graz",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/klangfarbe.png",
+                        "alt": "Klangfarbe Logo",
+                        "text": "Vienna",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "BELGIUM",
+                "abbreviation": "be",
+                "spot-metrics": { "width": "2.28%", "aspectRatio": "10/13", "left": "30.3%", "bottom": "48.6%"},
+                "img": "img/svg/flags/be.svg",
+                "items": [
+                    {
+                        "img": "img/logos/bax-music.png",
+                        "alt": "Bax Music Logo",
+                        "text": "Antwerp",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "BULGARIA",
+                "abbreviation": "bg",
+                "spot-metrics": { "width": "5.76%", "aspectRatio": "20/16", "left": "45.5%", "bottom": "14.8%"},
+                "img": "img/svg/flags/bg.svg",
+                "items": [
+                    {
+                        "img": "img/logos/music-division.png" ,
+                        "alt": "Music Division Logo",
+                        "text": "Sofia",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "CROATIA",
+                "abbreviation": "hr",
+                "spot-metrics": { "width": "6.92%", "aspectRatio": "24/25", "left": "36.3%", "bottom": "22.2%"},
+                "img": "img/svg/flags/hr.svg",
+                "items": [
+                    {
+                        "img": "img/logos/audio-pro.png" ,
+                        "alt": "Audio Pro Logo",
+                        "text": "Rijeka | Višnjevac | Varaždin | Zagreb",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "DENMARK",
+                "abbreviation": "dk",
+                "spot-metrics": { "width": "4.9%", "aspectRatio": "17/13", "left": "40.06%", "bottom": "56.4%"},
+                "img": "img/svg/flags/dk.svg",
+                "items": [
+                    {
+                        "img": "img/logos/effektpedaler.png" ,
+                        "alt": "Effektpedaler Logo",
+                        "text": "Copenhagen",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/the-pedal-zone.png" ,
+                        "alt": "The Pedal Zone Logo",
+                        "text": "Aarhus",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "FINLAND",
+                "abbreviation": "fi",
+                "spot-metrics": { "width": "11.53%", "aspectRatio": "40/58", "left": "57.9%", "bottom": "56%"},
+                "img": "img/svg/flags/fi.svg",
+                "items": [
+                    {
+                        "img": "img/logos/dlx-deluxe-music.png" ,
+                        "alt": "DLX Deluxe Music Logo",
+                        "text": "Helsinki",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "FRANCE",
+                "abbreviation": "fr",
+                "spot-metrics": { "width": "14.41%", "aspectRatio": "50/80", "left": "18.75%", "bottom": "23.9%"},
+                "img": "img/svg/flags/fr.svg",
+                "items": [
+                    {
+                        "img": "img/logos/bauer-musique.png" ,
+                        "alt": "Bauer Musique Logo",
+                        "text": "Orléans",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/boutikazik.png" ,
+                        "alt": "Boutikazik Logo",
+                        "text": "Vendin-lès-Béthune",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/euroguitar.png" ,
+                        "alt": "Euroguitar Logo",
+                        "text": "Lille",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/guitare-village.png" ,
+                        "alt": "Guitare Village Logo",
+                        "text": "Domont",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/hurricane-music.png" ,
+                        "alt": "Hurricane Music Logo",
+                        "text": "Nantes | Bordeaux",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/lordel-musique.png" ,
+                        "alt": "Lordel Musique Logo",
+                        "text": "Caen",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/michenaud.png" ,
+                        "alt": "Michenaud Logo",
+                        "text": "Nantes",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/palf.png" ,
+                        "alt": "Palf Logo",
+                        "text": "Nice",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/stars-music.png" ,
+                        "alt": "Star's Music Logo",
+                        "text": "Paris | Lille | Lyon | Tolouse",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/vinstage-music.png" ,
+                        "alt": "VinStage Music Logo",
+                        "text": "Lille",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/woodbrass-music.png" ,
+                        "alt": "Woodbrass Music Logo",
+                        "text": "Paris",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/woodbrass-music.png" ,
+                        "alt": "Woodbrass Music Logo",
+                        "text": "Paris",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "GERMANY",
+                "abbreviation": "de",
+                "spot-metrics": { "width": "11.24%", "aspectRatio": "39/46", "left": "32.0%", "bottom": "37.9%"},
+                "img": "img/svg/flags/de.svg",
+                "items": [
+                    {
+                        "img": "img/logos/effektboutique.png" ,
+                        "alt": "Effektboutique Logo",
+                        "text": "Ostfildern",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/gear4music.png" ,
+                        "alt": "Gear4music Logo",
+                        "text": "Mühlheim an der Ruhr",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/hieber-lindberg.png" ,
+                        "alt": "Hieber Lindberg Logo",
+                        "text": "Munich",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/loopersparadise.png" ,
+                        "alt": "Loopersparadise Logo",
+                        "text": "Saarbrücken",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/music-store-professional.png" ,
+                        "alt": "Music Store Professional Logo",
+                        "text": "Cologne",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/musicline.png" ,
+                        "alt": "Musicline Logo",
+                        "text": "Neu-Ulm",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/promusictools.png" ,
+                        "alt": "ProMusicTools Logo",
+                        "text": "Munich",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/rock-shop.png" ,
+                        "alt": "Rock Shop Logo",
+                        "text": "Karlsruhe",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/session.png" ,
+                        "alt": "Session Logo",
+                        "text": "Walldorf | Frankfurt am Main",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/thomann.png" ,
+                        "alt": "Thomann Logo",
+                        "text": "Burgebrach",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "GREECE",
+                "abbreviation": "gr",
+                "spot-metrics": { "width": "8.07%", "aspectRatio": "28/45", "left": "40.06%", "bottom": "0%"},
+                "img": "img/svg/flags/gr.svg",
+                "items": [
+                    {
+                        "img": "img/logos/kagmakis.png" ,
+                        "alt": "Kagmakis Logo",
+                        "text": "Athens",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/philippos-nakas.png" ,
+                        "alt": "Philippos Nakas Logo",
+                        "text": "Athens | Paiania | Thessaloniki | Iraklion | Ioannina and others",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/synthesizer-gr.png" ,
+                        "alt": "Synthesizer.gr Logo",
+                        "text": "Athens | Paiania | Thessaloniki | Iraklion | Ioannina and others",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "HUNGARY",
+                "abbreviation": "hu",
+                "spot-metrics": { "width": "7.49%", "aspectRatio": "26/10", "left": "38.6%", "bottom": "28.8%"},
+                "img": "img/svg/flags/hu.svg",
+                "items": [
+                    {
+                        "img": "img/logos/stageshop.svg" ,
+                        "alt": "Stageshop Logo",
+                        "text": "Budapest",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "ICELAND",
+                "abbreviation": "is",
+                "spot-metrics": { "width": "6.06%", "aspectRatio": "21/17", "left": "38%", "bottom": "93%"},
+                "img": "img/svg/flags/is.svg",
+                "items": [
+                    {
+                        "img": "img/logos/hljodfaerahusid.png" ,
+                        "alt": "Hljodfaerahusid Logo",
+                        "text": "Reykjavík",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "IRELAND",
+                "abbreviation": "ie",
+                "spot-metrics": { "width": "9.52%", "aspectRatio": "33/24", "left": "19.3%", "bottom": "65.8%"},
+                "img": "img/svg/flags/ie.svg",
+                "items": [
+                    {
+                        "img": "img/logos/some-neck-guitars.png" ,
+                        "alt": "Some Neck Guitars Logo",
+                        "text": "Dublin",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "ITALY",
+                "abbreviation": "it",
+                "spot-metrics": { "width": "12.95%", "aspectRatio": "45/68", "left": "25.6%", "bottom": "8.6%"},
+                "img": "img/svg/flags/it.svg",
+                "items": [
+                    {
+                        "img": "img/logos/box-guitar.png" ,
+                        "alt": "Box Guitar Logo",
+                        "text": "Turin",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/brahms.svg" ,
+                        "alt": "Brahms Logo",
+                        "text": "Montivarchi",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/centro-chitarre.png" ,
+                        "alt": "Centro Chitarre Logo",
+                        "text": "Naples",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/esse-music.png" ,
+                        "alt": "Esse Music Logo",
+                        "text": "Montebelluna",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/ivory-lab.png" ,
+                        "alt": "Ivorylab Logo",
+                        "text": "Turin",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/strumenti-musicali.svg" ,
+                        "alt": "Strumenti Musicali Logo",
+                        "text": "Taranto",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/your-music.png" ,
+                        "alt": "Your Music Logo",
+                        "text": "Rome",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "NETHERLANDS",
+                "abbreviation": "nl",
+                "spot-metrics": { "width": "3.46%", "aspectRatio": "12/13", "left": "33.2%", "bottom": "51.4%"},
+                "img": "img/svg/flags/nl.svg",
+                "items": [
+                    {
+                        "img": "img/logos/bax-music.png" ,
+                        "alt": "Bax Music Logo",
+                        "text": "Amsterdam | Appeldoorn | Goes | Rotterdam",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "NORWAY",
+                "abbreviation": "no",
+                "spot-metrics": { "width": "27.38%", "aspectRatio": "95/53", "left": "42.1%", "bottom": "62.6%"},
+                "img": "img/svg/flags/no.svg",
+                "items": [
+                    {
+                        "img": "img/logos/evenstad-musikk.png" ,
+                        "alt": "Evenstad Musikk Logo",
+                        "text": "Grimstad",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "POLAND",
+                "abbreviation": "pl",
+                "spot-metrics": { "width": "9.24%", "aspectRatio": "33/46", "left": "41.21%", "bottom": "33.33%"},
+                "img": "img/svg/flags/pl.svg",
+                "items": [
+                    {
+                        "img": "img/logos/erato.png" ,
+                        "alt": "Erato Logo",
+                        "text": "Subkowy",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "PORTUGAL",
+                "abbreviation": "pt",
+                "spot-metrics": { "width": "10.37%", "aspectRatio": "36/42", "left": "0%", "bottom": "29.22%"},
+                "img": "img/svg/flags/pt.svg",
+                "items": [
+                    {
+                        "img": "img/logos/mr-jack-guitars.png" ,
+                        "alt": "Mr. Jack Guitars Logo",
+                        "text": "Lisbon",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "SLOVAKIA",
+                "abbreviation": "sk",
+                "spot-metrics": { "width": "4.61%", "aspectRatio": "16/14", "left": "41.5%", "bottom": "30%"},
+                "img": "img/svg/flags/sk.svg",
+                "items": [
+                    {
+                        "img": "img/logos/muziker.svg" ,
+                        "alt": "Muziker Logo",
+                        "text": "Bratislava",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "SPAIN",
+                "abbreviation": "es",
+                "spot-metrics": { "width": "18.75%", "aspectRatio": "65/64", "left": "3.17%", "bottom": "23.5%"},
+                "img": "img/svg/flags/es.svg",
+                "items": [
+                    {
+                        "img": "img/logos/alfasoni.png" ,
+                        "alt": "Alfasoni Logo",
+                        "text": "Barcelona",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/aliaga-luthier.png" ,
+                        "alt": "Aliaga Luthier Logo",
+                        "text": "Madrid",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/estudio-54.png" ,
+                        "alt": "Estudio 54 Logo",
+                        "text": "Santiago de Compostela",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/mutan-monkey.png" ,
+                        "alt": "Mutan Monkey Logo",
+                        "text": "Barcelona",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/trixula.png" ,
+                        "alt": "Txirula Logo",
+                        "text": "Biscay",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "SWEDEN",
+                "abbreviation": "se",
+                "spot-metrics": { "width": "19.59%", "aspectRatio": "68/65", "left": "45.3%", "bottom": "52.3%"},
+                "img": "img/svg/flags/se.svg",
+                "items": [
+                    {
+                        "img": "img/logos/gear4music.png" ,
+                        "alt": "Gear4Music Logo",
+                        "text": "Rosersberg",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/musikhuset-karlstad.png" ,
+                        "alt": "Musikhuset Karlstad Logo",
+                        "text": "Rosersberg",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/these-go-to-eleven.png" ,
+                        "alt": "These Go To 11 Logo",
+                        "text": "Stockholm",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "SWITZERLAND",
+                "abbreviation": "ch",
+                "spot-metrics": { "width": "4.32%", "aspectRatio": "15/10", "left": "29.7%", "bottom": "36.6%"},
+                "img": "img/svg/flags/ch.svg",
+                "items": [
+                    {
+                        "img": "img/logos/house-of-sound.svg" ,
+                        "alt": "House of Sound Logo",
+                        "text": "Basel",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "UNITED KINGDOM",
+                "abbreviation": "gb",
+                "spot-metrics": { "width": "16.74%", "aspectRatio": "58/59", "left": "20.8%", "bottom": "55.6%"},
+                "img": "img/svg/flags/gb.svg",
+                "items": [
+                    {
+                        "img": "img/logos/andertons.png" ,
+                        "alt": "Andertons Music Logo",
+                        "text": "Guildford",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/bonners.svg" ,
+                        "alt": "Bonners Logo",
+                        "text": "Eastbourne",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/boost-guitar-pedals.svg" ,
+                        "alt": "Boost Guitar Pedals",
+                        "text": "Windsor",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/break-the-machine.png" ,
+                        "alt": "Break The Machine",
+                        "text": "Holmfirth",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/coda-music.png" ,
+                        "alt": "Coda Music Logo",
+                        "text": "Stevenage",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/gak.png" ,
+                        "alt": "GAK Logo",
+                        "text": "Brighton",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/gear4music.png" ,
+                        "alt": "Gear4Music Logo",
+                        "text": "York",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/guitar-fx-direct.png" ,
+                        "alt": "Guitar FX Direct Logo",
+                        "text": "North Gorley",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/guitarguitar.png" ,
+                        "alt": "Guitarguitar Logo",
+                        "text": "Birmingham | Camden, London | Edinburgh and other",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/hot-rox-uk.png" ,
+                        "alt": "Hot Rox UK Logo",
+                        "text": "Nottingham",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/juno.svg" ,
+                        "alt": "Juno Logo",
+                        "text": "London",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/moji-music.png" ,
+                        "alt": "Moji Music Logo",
+                        "text": "Dynas Powys",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/pmt.png" ,
+                        "alt": "PMT Logo",
+                        "text": "Birmingham | Bristol | Cambridge | Cardiff and other",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/scan.svg" ,
+                        "alt": "Scan Logo",
+                        "text": "Westcliff on Sea",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/southend-music-exchange.png" ,
+                        "alt": "Southend Music Exchange Logo",
+                        "text": "Ormskirk",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "NORTH AMERICA",
+        "abbreviation": "na",
+        "headline-position": { "left": "33.3%", "bottom": "47.5%"},
+        "spot-metrics": { "width": "22.25%", "aspectRatio": "445/409", "left": "12.3%", "bottom": "56.64%"},
+        "transform": { "scale": 2.1, "translateX": "45%", "translateY": "13%" },
+        "items": [
+            {
+                "name": "CANADA",
+                "abbreviation": "ca",
+                "spot-metrics": { "width": "73.03%", "aspectRatio": "325/284", "left": "26.52%", "bottom": "30.8%"},
+                "img": "img/svg/flags/ca.svg",
+                "items": [
+                    {
+                        "img": "img/logos/electric-mojo-guitars.png" ,
+                        "alt": "Electric Mojo Guitars Logo",
+                        "text": "Blainville",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "MEXICO",
+                "abbreviation": "mx",
+                "spot-metrics": { "width": "28.99%", "aspectRatio": "129/82", "left": "46.07%", "bottom": "0.73%"},
+                "img": "img/svg/flags/mx.svg",
+                "items": [
+                    {
+                        "img": "img/logos/guitar-gear.png" ,
+                        "alt": "Guitar Gear Logo",
+                        "text": "Mexico City | San Pedro Garza García",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "name": "UNITED STATES",
+                "abbreviation": "us",
+                "spot-metrics": { "width": "88.09%", "aspectRatio": "392/267", "left": "0%", "bottom": "12.95%"},
+                "img": "img/svg/flags/us.svg",
+                "items": [
+                    {
+                        "img": "img/logos/austin-guitar-house.png" ,
+                        "alt": "Austin Guitar House Logo",
+                        "text": "Austin, TX",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/chicago-music-exchange.png" ,
+                        "alt": "Chicago Music Exchange Logo",
+                        "text": "Chicago, IL",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/coast-sonic.png" ,
+                        "alt": "Coast Sonic Logo",
+                        "text": "Encinitas, CA",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/cottonwood-music-emporium.png" ,
+                        "alt": "Cottonwood Music Emporium Logo",
+                        "text": "Costa Mesa, CA",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/crazy-daves-music.png" ,
+                        "alt": "Crazy Dave's Music Logo",
+                        "text": "Jacksonville, FL",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/gear-hero.png" ,
+                        "alt": "Guitar Hero Logo",
+                        "text": "Boca Raton, FL",
+                        "link": "#"
+                    },
+                    {
+                        "img": "img/logos/vintage-king.png" ,
+                        "alt": "Vintage King Logo",
+                        "text": "Los Angeles | Nashville, TN | Troy, MI",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "OCEANIA",
+        "abbreviation": "oc",
+        "headline-position": { "left": "66%", "bottom": "10%"},
+        "spot-metrics": { "width": "15.05%", "aspectRatio": "301/261", "left": "81.8%", "bottom": "23.83%"},
+        "transform": { "scale": 3.1, "translateX": "-80%", "translateY": "-35%" },
+        "items": [
+            {
+                "name": "AUSTRALIA",
+                "abbreviation": "au",
+                "spot-metrics": { "width": "65.1%", "aspectRatio": "196/202", "left": "0%", "bottom": "8.44%"},
+                "img": "img/svg/flags/au.svg",
+                "items": [
+                    {
+                        "img": "img/logos/pedal-empire.png",
+                        "alt": "Pedal Empire Logo",
+                        "text": "Brisbane",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    }
+]
