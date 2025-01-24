@@ -7,10 +7,12 @@
     <link rel="icon" href="img/rabbit-favicon.ico" type="image/x-icon">
     <link rel='stylesheet' type='text/css' href='reset.css'>
     <link rel='stylesheet' type='text/css' href='dealers.css'>
-    <link rel='stylesheet' type='text/css' href='products-media.css'>
+    <link rel='stylesheet' type='text/css' href='dealers-media.css'>
     <link rel='stylesheet' type='text/css' href='base.css'>
     <link rel='stylesheet' type='text/css' href='base-media.css'>
-    <script src="base.js" defer></script>
+    <script src="js/base.js" defer></script>
+    <script src="js/dealers-map.js" defer></script>
+    <!--<script src="js/dealers.js" defer></script>-->
 </head>
 <body>    
     <header>
@@ -58,19 +60,65 @@
         <div id="header-background"></div>
     </header>
     <main>
-        <section class="hero">
-            <picture>
-                <source srcset="img/hero/hero-dealers-2560.webp" type="image/webp" media="(min-width: 1921px)">
-                <source srcset="img/hero/hero-dealers-1920.webp" type="image/webp" media="(min-width: 1025px)">
-                <source srcset="img/hero/hero-dealers-1024.webp" type="image/webp" media="(max-width: 1024px)">
-                <img src="img/hero/hero-dealers-1920.jpg" loading="lazy" alt="Hero Image">
-            </picture>
-            <div class="headline-box">
+        <section class="hero" id="dealers-map-section">
+            <div id="dealers-map">
+                <img id="dealers-map-img" src="img/svg/map/map.svg"/>
+            </div>
+            <div class="headline-box" id="dealers-headline">
                 <h1>DEALERS</h1>
                 <p class="large">Let's Go Find The Rabbit</p>
             </div>
+            <h2 class="spot-headline">EUROPE</h2>
+            <a href="#" id="back-to-map-link">BACK</a>
         </section>
-        <section class="content page-content">
+        <section id="dealers-stage-section">
+            <div id="dealers-stage">
+                <div id="dynamic-dealers-stage">
+                </div>
+                <div id="major-dealers-wrapper">
+                    <div id="major-dealers-stage">
+                        <a href="#">
+                            <picture>
+                                <img src="img/logos/andertons.png" alt="Andertons Logo">
+                            </picture>
+                        </a>
+                        <a href="#">
+                            <picture>
+                                <img src="img/logos/the-pedal-zone.png" alt="The Pedal Zone Logo">
+                            </picture>
+                        </a>
+                        <a href="#">
+                            <picture>
+                                <img src="img/logos/thomann.png" alt="Thomann Logo">
+                            </picture>
+                        </a>
+                        <a href="#">
+                            <picture>
+                                <img src="img/logos/chicago-music-exchange.png" alt="Chicago Music Exchange Logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div id="major-dealers-flags">
+                        <div id="flag-uk">
+                            <hr><hr>
+                        </div>
+                        <div id="flag-eu">
+                            <hr><hr>
+                        </div>
+                        <div id="flag-us">
+                            <hr><hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dealers-stage-subline">
+                <p> As a retailer interested in our product line, get in touch with our
+                    <a href="https://www.example.com">distribution partners ↗</a>
+                </p>
+            </div>
+            <!-- <div id="item-list">
+                Dynamisch generierte Listenelemente 
+            </div> -->
         </section>
         <section id="newsletter">
             <div id="newsletter-headline-box">

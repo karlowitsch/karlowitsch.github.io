@@ -53,12 +53,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: none;
 }
 .header-nav__item a{
     display: flex;
     align-items: center;
-    pointer-events: auto;
     transform: scale(0.87);
     transition: transform 0.07s linear, color 0.07s linear;
     color: white;
@@ -75,6 +73,7 @@ header{
 #header-nav__item-logo a{
     aspect-ratio: 25/16;
     height: 60%;
+    pointer-events: auto;
 }
 #header-nav__item-logo svg{
     width: 100%;
@@ -84,14 +83,14 @@ header{
 #header-nav__item-pages{
     position: absolute;
     width: 100%;
-    height: 100svh;
-    pointer-events: none;
+    height: 100vh;
     display: flex;
     opacity: 0;
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease;
     background-color:rgba(0, 0, 0, 0.98);
+    overflow: hidden;
 }
 #header-nav__pages-menu{
     height: 50%;
@@ -106,6 +105,7 @@ header{
 }
 #header-nav__item-cart a {
     height: 25%;
+    pointer-events: auto;
 }
 #header-nav__item-cart svg{
     aspect-ratio: 10/9;
@@ -119,6 +119,7 @@ header{
     height: 100%;
     aspect-ratio: 1/1;
     display: flex;
+    pointer-events: auto;
 }
 #header-nav__item-toggle a{
     width: 80%;
@@ -169,7 +170,7 @@ header{
 .hero{
     position: relative;
     width: 100%;
-    height: 60svh;
+    height: 61.8svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,20 +181,20 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 .hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
+    opacity: 1;
 }
 .headline-box{
     text-align: center;
-    opacity: 0;
-    animation: fadeIn 0.3s ease-in-out forwards;
     z-index: 0;
+    margin-top: 14vh;
 }
 @keyframes fadeIn {
     to {
@@ -220,7 +221,7 @@ h1{
 }
 h2{
     font-family: 'OswaldSemiBold', sans-serif;
-    font-size: clamp(40px, 7vw, 50px);
+    font-size: clamp(30px, 7vw, 40px);
     line-height: 1.2;
 }
 h3{

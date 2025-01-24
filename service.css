@@ -1,67 +1,97 @@
-#products-hero{
-    height: 60vh;
+#service-hero{
+    height: 61.8vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/hero-service.jpg);
+    text-align: center;
+    background-image: url('img/service-hero.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
-    background-color: #0f0f0f;
 }
-.headline-box{
-    text-align: center;
+#service-hero p{
+    width: 700px;
+    font-size: 23px;
 }
-.content{
+.section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#products{
+.section-toggle{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background-color: yellowgreen;
-    overflow-y: hidden;
-    padding: 0 23%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    box-shadow: inset 0 50px 80px rgba(0, 0, 0, 0.4);
 }
-.products__item{
+.faq-toggle{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.section-toggle-header{
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    aspect-ratio: 1/1;
-    background-color:brown;
+    margin: 0 5vw;
+}
+.section-content{
+    max-width: 1200px;
+    height: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 0 5vw;
+    overflow: hidden;
+    padding: 0 0;
+    transition: height 0.3s linear, padding 0.3s linear;
 }
-.products__item-picture{
-    position: absolute;
-    width: 50%; /* Bild passt sich dem Parent an */
+.faq-content{
+    max-width: 600px;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0;
+    transition: height 0.3s linear, padding 0.3s linear;
 }
-.products__item-picture-blend{
-    opacity: 0;
+#warranty-content p, #support-content p{
+    column-count: 2;
+    column-gap: 40px;
 }
-.products__item-picture img {
-    width: 100%; /* Skaliert das Bild innerhalb des Parent */
-    height: auto; /* Erhält das Seitenverhältnis */
-    display: block; /* Entfernt unnötige Abstände unterhalb des Bildes */
-    transform: scale(0.7);
+.section-title, .section-subtitle{
+    white-space: nowrap;
+    color: white;
 }
-
-#usp{
+.section-content hr{
     width: 100%;
-    height: 100vh;
-    display: grid;
-    gap: 1px;
-    grid-template-rows: auto auto auto;
-    background-color: brown;
 }
-.usp__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
+.section-content p{
+    width: 100%;
+    font-size: 16px;
 }
-
-
+.faq-content p{
+    margin-bottom: 35px;
+}
+.arrow {
+    transition: transform 0.35s ease;
+}
+.section-arrow{
+    position: absolute;
+    width: 50px;
+    right: 0;
+}
+.faq-arrow{
+    width: 20px;
+}
+h3{
+    margin-right: auto;
+    color: rgb(20, 20, 20);
+}

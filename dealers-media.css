@@ -1,0 +1,15 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+    #dealers-map{
+        position: absolute;
+        height: 55vw;
+        max-height: 82%;
+        transform: translateX(0) translateY(10px);
+        display: flex;
+        aspect-ratio: 2000/1024;
+    }
+
+}

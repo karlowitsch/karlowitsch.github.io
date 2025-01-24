@@ -1,50 +1,299 @@
-#products-hero{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(img/hero-dealers.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-color:#0f0f0f;
-}
-.headline-box{
-    text-align: center;
-}
-.content{
+#dealers-map-section {
+    position: relative;
     width: 100%;
+    height: 61.8vh;
+    min-height: 474px;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+}
+#dealers-map{
+    position: absolute;
+    height: 57vw;
+    max-height: 80%;
+    transform: translateX(0) translateY(10px);
+    display: flex;
+    aspect-ratio: 2000/1024;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+#dealers-map-img{
+    position: absolute;
+    opacity: 0.2;
+}
+.map-spot{
+    position: absolute;
+    transform: translateX(0) translateY(0);
+    opacity: 0.7;
+    transform-origin: center center;
+    display: flex;
+    pointer-events: none;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease;
+}
+.map-spot svg{
+    width: 100%;
+    height: 100%;
+}
+.map-spot-img-svg use{
+    fill: white;
+    transition: fill 0.01s linear, opacity 0.01s linear;
+}
+.map-spot-link-svg{
+    position: absolute;
+    opacity: 0;
+}
+.map-spot-link use{
+    pointer-events: auto;
+    cursor: pointer;
+}
+.map-spot:has(.map-spot-link:hover) {
+    opacity: 0.9;
+}
+.map-spot:has(.map-spot-link:hover) .map-spot-img-svg use{
+    fill: #fad190;
+}
+.map-country{
+    opacity:0;
+}
+#map-country-jp svg use{
+    fill: #ff0000;
+
+}
+
+
+.spot-headline{
+    position: absolute;
+    font-size: 3em;
+    top: 76%;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+}
+#back-to-map-link{
+    position: absolute;
+    font-size: 1.5em;
+    top: 88%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#dealers-stage-section {
+    position: relative;
+    width: 100%;
+    height: 38.2vh;
+    min-height: 293px;
+    background-image: url('img/kma-hg.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.6s ease-in-out;
+}
+#dealers-stage{
+    max-width: 110vh;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0 2%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#products{
-    width: 100%;
+#major-dealers-wrapper{
+    height: 31.27vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+    transition: opacity 0.4s ease-in-out;
+}
+#major-dealers-stage{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    background-color: yellowgreen;
-    overflow-y: hidden;
-    padding: 0 23%;
 }
-.products__item{
-    position: relative;
-    aspect-ratio: 1/1;
-    background-color:brown;
+#major-dealers-stage a {
+    width: 100%;
+    aspect-ratio: 1/0.6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.products__item-picture{
-    position: absolute;
-    width: 50%; /* Bild passt sich dem Parent an */
+#major-dealers-stage picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2s ease;
 }
-.products__item-picture-blend{
+#major-dealers-stage img {
+    width: 88%;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+#major-dealers-stage a:hover img {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px white);
+}
+#major-dealers-flags{
+    aspect-ratio: 1/0.04;
+    display: flex;
+    gap: 2px;
+    margin-top: 1%;
+    transition: opacity 0.5s ease-in-out;
+}
+#flag-eu {
+    flex: 50%;
+    background-image: url("img/svg/flags/eu.svg");
+    padding: 0 10%;
+}
+#flag-uk {
+    flex: 25%;
+    background-image: url("img/svg/flags/gb.svg");
+    padding: 0 5%;
+}
+#flag-us {
+    flex: 25%;
+    background-image: url("img/svg/flags/us.svg");
+    padding: 0 5%;
+}
+#flag-eu, #flag-uk, #flag-us {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#flag-eu hr{
+    width: 40%;
+}
+#flag-uk hr, #flag-us hr{
+    width: 30%;
+}
+
+
+
+#dynamic-dealers-stage {
+    width: 100%;
+    padding: 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
 }
-.products__item-picture img {
-    width: 100%; /* Skaliert das Bild innerhalb des Parent */
-    height: auto; /* Erhält das Seitenverhältnis */
-    display: block; /* Entfernt unnötige Abstände unterhalb des Bildes */
-    transform: scale(0.7);
+
+.dynamic-country-item{
+    width: 5%;
+    transform: scale(0.8);
+    margin: 1%;
+    min-width: 150px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
 }
+.dynamic-country-item:hover{
+    transform: scale(0.95);
+}
+.dynamic-country-item img{
+    width: 100%;
+}
+
+
+#dealers-stage-subline {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2525251c;
+    bottom: 0;
+}
+#dealers-stage-subline a{
+    font-size: 1em;
+    color: #252525;
+    font-weight: bold;
+}
+
+
+#item-list {
+    width: 60%;
+    min-width: 820px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+.item {
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    position: relative;
+    line-height: 0;
+    text-align: center;
+}
+.item a{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country-item picture {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country-item img {
+    width: 100%;
+    height: 70%;
+}
+.dealer-item img {
+    width: 73%;
+    height: auto;
+    margin: 0 auto;
+    transition: width 0.2s ease;
+    cursor: pointer;
+}
+.dealer-item img:hover {
+    width: 82%;
+    height: auto;
+}
+.country-item p {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    padding: 8%;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    line-height: 1.4;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dealer-item p {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    padding: 8%;
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    line-height: 1.4;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
