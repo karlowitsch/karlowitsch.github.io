@@ -6,6 +6,15 @@
     font-family: 'OpenSansRegular';
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
 }
+
+.lazy {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.lazy.loaded {
+    opacity: 1;
+}
+
 body{
     width: 100%;
     margin: 0;
