@@ -1,29 +1,27 @@
-#dealers-map-section {
-    width: 100%;
-    overflow: hidden;
-}
 #dealers-map{
-    position: absolute;
-    height: 57vw;
-    max-height: 80%;
-    transform: translateX(0) translateY(10px);
-    display: flex;
+    position: relative;
+    height: 80%;
+    max-height: 62vw;
     aspect-ratio: 2000/1024;
-    opacity: 0;
+    width: fit-content;
     animation: fadeIn 0.8s ease-in-out forwards;
+    transition: transform 0.5s, height 0.5s;
+    will-change: transform;
 }
-#dealers-map-img{
-    position: absolute;
-    opacity: 0.2;
+#dealers-map img{
+    height: 100%;
+    opacity: 0.1;
+}
+#dealers-headline{
+    transition: opacity 0.25s;
 }
 .map-spot{
     position: absolute;
-    transform: translateX(0) translateY(0);
     opacity: 0.7;
     transform-origin: center center;
     display: flex;
     pointer-events: none;
-    transition: transform 0.6s ease-in-out, opacity 0.6s ease;
+    transition: opacity 0.5s;
 }
 .map-spot svg{
     width: 100%;
@@ -31,7 +29,7 @@
 }
 .map-spot-img-svg use{
     fill: white;
-    transition: fill 0.01s linear, opacity 0.01s linear;
+    transition: fill 0.01s, opacity 0.01s;
 }
 .map-spot-link-svg{
     position: absolute;
@@ -48,7 +46,9 @@
     fill: #fad190;
 }
 .map-country{
-    opacity:0;
+    opacity: 0;
+    display: flex;
+    transition: opacity 0.5s;
 }
 #map-country-jp svg use{
     fill: #ff0000;
@@ -62,7 +62,7 @@
     top: 76%;
     opacity: 0;
     z-index: 999;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s;
 }
 #back-to-map-link{
     position: absolute;
@@ -71,7 +71,12 @@
     opacity: 0;
     pointer-events: none;
     z-index: 999;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s;
+    color: white;
+    text-decoration: underline;
+}
+#back-to-map-link:hover{
+    color: #fad190;
 }
 
 
@@ -80,22 +85,26 @@
     position: relative;
     width: 100%;
     min-height: 38.2vh;
+    height: 38.2vh;
     background-image: url('img/kma-hg.jpg');
     background-repeat: repeat;
     background-size: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    transition: height 0.6s ease-in-out;
+    overflow: hidden;
+    transition: height 0.5s;
 }
 #dealers-stage{
     position: relative;
     width: 100%;
-    max-width: 110vh;
+    max-width: 160vh;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    transition: height 0.5s ease-in-out;
 }
 #dealers-stage-subline {
     width: 100%;
@@ -104,6 +113,7 @@
     background-color: #2525251c;
     text-align: center;
     padding: 1% 0;
+    z-index: 9999;
 }
 #dealers-stage-subline a{
     font-size: 1em;
@@ -112,21 +122,72 @@
 }
 
 
+.dynamic-stage{
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 6vw 5vh 6vw;
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+#dynamic-stage-countries{
+    opacity: 0;
+    pointer-events: none;
+}
+#dynamic-stage-dealers{
+    opacity: 0;
+    pointer-events: none;
+}
+.dynamic-stage-item {
+    min-width: 70px;
+    width: 5vw;
+    margin: 1%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.25s;
+}
+.dynamic-stage-item-dealer{
+    min-width: 180px;
+    margin: 5%;
+    aspect-ratio: 1/0.5;
+    width: 10vw;
+}
+.dynamic-stage-item:hover {
+    transform: scale(1.1);
+}
+.dynamic-stage-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
 
 #major-dealers-wrapper{
+    position: absolute;
     width: 100%;
+    max-width: 120vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: transform 0.25s, opacity 0.25s;
 }
 #major-dealers-stage{
     width: 100%;
+    flex: 0 0 65%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    overflow: hidden;
+    align-items: end;
 }
 #major-dealers-stage a {
     display: contents;
@@ -138,152 +199,32 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    transition: transform 0.2s ease;
 }
 #major-dealers-stage a:hover img {
     transform: scale(1.15);
     filter: drop-shadow(0 0 10px white);
 }
 #major-dealers-flags{
+    padding-top: 1%;
+    flex: 0 0 35%;
     aspect-ratio: 1/0.04;
     display: flex;
-    gap: 2px;
-    margin-top: 1%;
-    transition: opacity 0.5s ease-in-out;
 }
-#flag-eu {
-    flex: 50%;
-    background-image: url("img/svg/flags/eu.svg");
-    padding: 0 10%;
-}
-#flag-uk {
+#major-dealers-flags div{
+    height: 2.5vw;
     flex: 25%;
-    background-image: url("img/svg/flags/gb.svg");
-    padding: 0 5%;
-}
-#flag-us {
-    flex: 25%;
-    background-image: url("img/svg/flags/us.svg");
-    padding: 0 5%;
-}
-#flag-eu, #flag-uk, #flag-us {
-    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-#flag-eu hr{
-    width: 40%;
+#flag-eu {
+    background-image: url("img/svg/flags/eu.svg");
 }
-#flag-uk hr, #flag-us hr{
-    width: 30%;
+#flag-uk {
+    background-image: url("img/svg/flags/gb.svg");
 }
-
-
-
-#dynamic-dealers-stage {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    opacity: 0;
-    padding: 3vh 5vw;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
+#flag-us {
+    background-image: url("img/svg/flags/us.svg");
 }
-
-.dynamic-country-item {
-    min-width: 67px;
-    max-width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.7);
-    transition: transform 0.1s ease-out;
-}
-.dynamic-country-item:hover {
-    transform: scale(0.8);
-}
-
-.dynamic-country-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-
-
-#item-list {
-    width: 60%;
-    min-width: 820px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    list-style: none;
-}
-.item {
-    max-width: 500px;
-    aspect-ratio: 1/1;
-    position: relative;
-    line-height: 0;
-    text-align: center;
-}
-.item a{
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.country-item picture {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.country-item img {
-    width: 100%;
-    height: 70%;
-}
-.dealer-item img {
-    width: 73%;
-    height: auto;
-    margin: 0 auto;
-    transition: width 0.2s ease;
-    cursor: pointer;
-}
-.dealer-item img:hover {
-    width: 82%;
-    height: auto;
-}
-.country-item p {
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    padding: 8%;
-    font-size: 1.2rem;
-    letter-spacing: normal;
-    line-height: 1.4;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dealer-item p {
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    padding: 8%;
-    font-size: 0.8rem;
-    letter-spacing: normal;
-    line-height: 1.4;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-

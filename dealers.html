@@ -6,11 +6,12 @@
     <title>Rabbit</title>
     <link rel="icon" href="img/rabbit-favicon.ico" type="image/x-icon">
     <link rel='stylesheet' type='text/css' href='reset.css'>
-    <link rel='stylesheet' type='text/css' href='dealers.css'>
-    <link rel='stylesheet' type='text/css' href='dealers-media.css'>
     <link rel='stylesheet' type='text/css' href='base.css'>
     <link rel='stylesheet' type='text/css' href='base-media.css'>
+    <link rel='stylesheet' type='text/css' href='dealers.css'>
+    <link rel='stylesheet' type='text/css' href='dealers-media.css'>
     <script src="js/base.js" defer></script>
+    <!--<script src="js/dealers-map-test.js" defer></script>-->
     <script src="js/dealers-map.js" defer></script>
     <!--<script src="js/dealers.js" defer></script>-->
 </head>
@@ -62,51 +63,52 @@
     <main>
         <section class="hero" id="dealers-map-section">
             <div id="dealers-map">
-                <img id="dealers-map-img" src="img/svg/map/map.svg" loading="lazy">
+                <img src="img/svg/map/map.svg" type="image/svg+xml">
             </div>
             <div class="headline-box" id="dealers-headline">
                 <h1>DEALERS</h1>
                 <p class="large">Let's Go Find The Rabbit</p>
             </div>
-            <h2 class="spot-headline">EUROPE</h2>
+            <h2 class="spot-headline">WORLD</h2>
             <a href="#" id="back-to-map-link">BACK</a>
         </section>
         <section id="dealers-stage-section">
             <div id="dealers-stage">
-                <div id="dynamic-dealers-stage">
+                <div class="dynamic-stage" id="dynamic-stage-countries">
+                </div>
+                <div class="dynamic-stage" id="dynamic-stage-dealers">
                 </div>
                 <div id="major-dealers-wrapper">
                     <div id="major-dealers-stage">
                         <a href="#">
                             <picture>
-                                <img src="img/logos/andertons.png" class="lazy" alt="Andertons Logo">
+                                <img src="img/logos/the-pedal-zone.png" class="lazy" loading="lazy" alt="The Pedal Zone Logo">
                             </picture>
                         </a>
                         <a href="#">
                             <picture>
-                                <img src="img/logos/the-pedal-zone.png" class="lazy" alt="The Pedal Zone Logo">
+                                <img src="img/logos/thomann.png" class="lazy" loading="lazy" alt="Thomann Logo">
                             </picture>
                         </a>
                         <a href="#">
                             <picture>
-                                <img src="img/logos/thomann.png" class="lazy" alt="Thomann Logo">
+                                <img src="img/logos/andertons.png" class="lazy" loading="lazy" alt="Andertons Logo">
                             </picture>
                         </a>
                         <a href="#">
                             <picture>
-                                <img src="img/logos/chicago-music-exchange.png" class="lazy" alt="Chicago Music Exchange Logo">
+                                <img src="img/logos/chicago-music-exchange.png" class="lazy" loading="lazy" alt="Chicago Music Exchange Logo">
                             </picture>
                         </a>
                     </div>
                     <div id="major-dealers-flags">
-                        <div id="flag-uk">
-                            <hr><hr>
+                        <div id="flag-eu">
                         </div>
                         <div id="flag-eu">
-                            <hr><hr>
+                        </div>
+                        <div id="flag-uk">
                         </div>
                         <div id="flag-us">
-                            <hr><hr>
                         </div>
                     </div>
                 </div>
@@ -165,5 +167,18 @@
         </nav>
         <p id="footer-copyright">&copy 2024 Rupture Farms Inc</p>
     </footer>
+    
+    <template id="country-template">
+        <div class="map-spot map-area">
+            <svg class="map-spot-img-svg">
+                <use href=""></use>
+            </svg>
+            <svg class="map-spot-link-svg">
+                <a class="map-spot-link"></a>
+                    <use href=""></use>
+                <a>
+            </svg>
+        </div>
+    </template>
 </body>
 </html>

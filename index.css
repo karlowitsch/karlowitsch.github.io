@@ -75,7 +75,7 @@ main .hero{
     transition: transform 0.2s ease;
 }
 .usp__item a:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .usp__item picture{
     position: absolute;
