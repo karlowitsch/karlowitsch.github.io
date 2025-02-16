@@ -170,7 +170,7 @@ async function handleArea(){
     });
     requestAnimationFrame(() => {
         updateCSS({
-            '#dealers-map': {'will-change': 'transform', 'transform': `translate3d(${areaData.transform3d.translate3d}) scale3d(${areaData.transform3d.scale3d})`}
+            '#dealers-map': {/*'will-change': 'transform',*/ 'transform': `translate3d(${areaData.transform3d.translate3d}) scale3d(${areaData.transform3d.scale3d})`}
         });
     });
 
@@ -193,7 +193,7 @@ async function handleArea(){
     }, 250);
     setTimeout(async() => {
         updateCSS({
-            '#dealers-map': {'will-change': `auto`}
+            //'#dealers-map': {'will-change': `auto`}
         });
     }, 500);
 }
@@ -211,7 +211,7 @@ async function handleCountry(){
     });
     requestAnimationFrame(() => {
         updateCSS({
-            '#dealers-map': {'will-change': 'transform', 'transform': `translate3d(${countryData.transform3d.translate3d}) scale3d(${countryData.transform3d.scale3d})`}
+            '#dealers-map': {/*'will-change': 'transform',*/ 'transform': `translate3d(${countryData.transform3d.translate3d}) scale3d(${countryData.transform3d.scale3d})`}
         });
     });
     setTimeout(async() => {
@@ -225,7 +225,7 @@ async function handleCountry(){
     }, 250);
     setTimeout(async() => {
         updateCSS({
-            '#dealers-map': {'will-change': `auto`}
+            //'#dealers-map': {'will-change': `auto`}
         });
     }, 500);
 }
@@ -241,7 +241,7 @@ function handleWorld(){
     });
     requestAnimationFrame(() => {
         updateCSS({
-            '#dealers-map': {'will-change': 'transform', 'transform': `translate3d(0, 0, 0) scale3d(1, 1, 1)`}
+            '#dealers-map': {/*'will-change': 'transform',*/ 'transform': `translate3d(0, 0, 0) scale3d(1, 1, 1)`}
         });
     });
 
@@ -264,7 +264,7 @@ function handleWorld(){
     }, 250);
     setTimeout(async() => {
         updateCSS({
-            '#dealers-map': {'will-change': `auto`}
+            //'#dealers-map': {'will-change': `auto`}
         });
     }, 500);
 }
