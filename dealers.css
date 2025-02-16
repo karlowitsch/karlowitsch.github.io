@@ -6,7 +6,7 @@
     width: fit-content;
     animation: fadeIn 0.8s ease-in-out forwards;
     transition: transform 0.5s, height 0.5s;
-    will-change: transform;
+    will-change: transform, opacity;
 }
 #dealers-map img{
     height: 100%;
@@ -49,6 +49,7 @@
     opacity: 0;
     display: flex;
     transition: opacity 0.5s;
+    will-change: transform, opacity;
 }
 #map-country-jp svg use{
     fill: #ff0000;
@@ -94,6 +95,7 @@
     flex-direction: column;
     overflow: hidden;
     transition: height 0.5s;
+    will-change: height;
 }
 #dealers-stage{
     position: relative;
@@ -135,10 +137,12 @@
 #dynamic-stage-countries{
     opacity: 0;
     pointer-events: none;
+    will-change: transform, opacity;
 }
 #dynamic-stage-dealers{
     opacity: 0;
     pointer-events: none;
+    will-change: transform, opacity;
 }
 .dynamic-stage-item {
     min-width: 70px;
