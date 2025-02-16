@@ -70,3 +70,20 @@ function handleScreenChange(e) {
 }
 mediaQuery.addEventListener('change', handleScreenChange);
 handleScreenChange(mediaQuery); // Initialer Check
+
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyElements = document.querySelectorAll(".lazy");
+    
+    var observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("loaded");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    lazyElements.forEach(function(element) {
+      observer.observe(element);
+    });
+});
