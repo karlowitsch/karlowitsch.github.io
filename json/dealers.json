@@ -2,15 +2,15 @@
     {
         "name": "ASIA",
         "abbreviation": "as",
-        "headline-position": { "left": "63.7%", "bottom": "44%"},
         "spot-metrics": { "width": "26.1%", "aspectRatio": "522/555", "left": "65.3%", "bottom": "45.12%"},
-        "transform": { "scale": 1.8, "translateX": "-52%", "translateY": "7%" },
+        "transform3d": { "translate3d": "-42%, 20%, 0", "scale3d": "1.5, 1.5, 1"},
         "items": [
             {
                 "name": "JAPAN",
                 "abbreviation": "jp",
-                "spot-metrics": { "width": "10.61%", "aspectRatio": "55/111", "left": "74.71%", "bottom": "39.05%"},
+                "spot-metrics": { "width": "2.75%", "aspectRatio": "55/111", "left": "86.2%", "bottom": "66.89%"},
                 "img": "img/svg/flags/jp.svg",
+                "transform3d": { "translate3d": "-224%, 125%, 0", "scale3d": "6, 6, 1"},
                 "items": [
                     {
                         "img": "img/logos/electro-harmonix.svg" ,
@@ -25,9 +25,8 @@
     {
         "name": "EUROPE",
         "abbreviation": "eu",
-        "headline-position": { "left": "44.5%", "bottom": "54.5%"},
         "spot-metrics": { "width": "17%", "aspectRatio": "340/248", "left": "57%", "bottom": "68.36%"},
-        "transform": { "scale": 3.2, "translateX": "-28%", "translateY": "19%" },
+        "transform3d": { "translate3d": "-50%, 86%, 0", "scale3d": "3.2, 3.2, 1"},
         "items": [
             {
                 "name": "AUSTRIA",
@@ -208,8 +207,9 @@
             {
                 "name": "GERMANY",
                 "abbreviation": "de",
-                "spot-metrics": { "width": "11.24%", "aspectRatio": "39/46", "left": "32.0%", "bottom": "37.9%"},
+                "spot-metrics": { "width": "1.95%", "aspectRatio": "39/46", "left": "62.7%", "bottom": "77.44%"},
                 "img": "img/svg/flags/de.svg",
+                "transform3d": { "translate3d": "-231%, 495%, 0", "scale3d": "17, 17, 1"},
                 "items": [
                     {
                         "img": "img/logos/effektboutique.png" ,
@@ -642,15 +642,15 @@
     {
         "name": "NORTH AMERICA",
         "abbreviation": "na",
-        "headline-position": { "left": "33.3%", "bottom": "47.5%"},
         "spot-metrics": { "width": "22.25%", "aspectRatio": "445/409", "left": "12.3%", "bottom": "56.64%"},
-        "transform": { "scale": 2.1, "translateX": "45%", "translateY": "13%" },
+        "transform3d": { "translate3d": "47%, 35%, 0", "scale3d": "1.9, 1.9, 1"},
         "items": [
             {
                 "name": "CANADA",
                 "abbreviation": "ca",
-                "spot-metrics": { "width": "73.03%", "aspectRatio": "325/284", "left": "26.52%", "bottom": "30.8%"},
+                "spot-metrics": { "width": "16.25%", "aspectRatio": "325/284", "left": "18.2%", "bottom": "69.04%"},
                 "img": "img/svg/flags/ca.svg",
+                "transform3d": { "translate3d": "73%, 90%, 0", "scale3d": "3.1, 3.1, 1"},
                 "items": [
                     {
                         "img": "img/logos/electric-mojo-guitars.png" ,
@@ -663,8 +663,9 @@
             {
                 "name": "MEXICO",
                 "abbreviation": "mx",
-                "spot-metrics": { "width": "28.99%", "aspectRatio": "129/82", "left": "46.07%", "bottom": "0.73%"},
+                "spot-metrics": { "width": "6.45%", "aspectRatio": "129/82", "left": "22.55%", "bottom": "56.93%"},
                 "img": "img/svg/flags/mx.svg",
+                "transform3d": { "translate3d": "213%, 90%, 0", "scale3d": "8.8, 8.8, 1"},
                 "items": [
                     {
                         "img": "img/logos/guitar-gear.png" ,
@@ -677,8 +678,10 @@
             {
                 "name": "UNITED STATES",
                 "abbreviation": "us",
-                "spot-metrics": { "width": "88.09%", "aspectRatio": "392/267", "left": "0%", "bottom": "12.95%"},
+                "spot-metrics": { "width": "19.6%", "aspectRatio": "392/267", "left": "12.3%", "bottom": "61.8%"},
                 "img": "img/svg/flags/us.svg",
+                "transform": { "translateX": "132%", "translateY": "86%",  "scale": 5.5},
+                "transform3d": { "translate3d": "132%, 86%, 0", "scale3d": "5.5, 5.5, 1"},
                 "items": [
                     {
                         "img": "img/logos/austin-guitar-house.png" ,
@@ -729,15 +732,15 @@
     {
         "name": "OCEANIA",
         "abbreviation": "oc",
-        "headline-position": { "left": "66%", "bottom": "10%"},
         "spot-metrics": { "width": "15.05%", "aspectRatio": "301/261", "left": "81.8%", "bottom": "23.83%"},
-        "transform": { "scale": 3.1, "translateX": "-80%", "translateY": "-35%" },
+        "transform3d": { "translate3d": "-120%, -55%, 0", "scale3d": "3.1, 3.1, 1"},
         "items": [
             {
                 "name": "AUSTRALIA",
                 "abbreviation": "au",
-                "spot-metrics": { "width": "65.1%", "aspectRatio": "196/202", "left": "0%", "bottom": "8.44%"},
+                "spot-metrics": { "width": "9.8%", "aspectRatio": "197/203", "left": "81.8%", "bottom": "25.98%"},
                 "img": "img/svg/flags/au.svg",
+                "transform3d": { "translate3d": "-145%, -68%, 0", "scale3d": "3.9, 3.9, 1"},
                 "items": [
                     {
                         "img": "img/logos/pedal-empire.png",
